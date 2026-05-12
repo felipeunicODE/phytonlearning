@@ -1,5 +1,4 @@
 import math, time, random
-
 cores = {'':'\033[m',
          'vermelho':'\033[31m',
          'verde':'\033[32m',
@@ -8,6 +7,7 @@ cores = {'':'\033[m',
          'roxo':'\033[35m',
          'ciano':'\033[36m',
          'cinza':'\033[36m'}
+
 
 #Sorteio simples
 n1 = str(input('Nome um: '))
@@ -35,8 +35,6 @@ tinta = area / 2
 latas = math.ceil(tinta / 5) #uma lata de tinta possui 5 litros e a cad 1 litro se pinta 2m
 #O cálculo é a quantidade de litros / por 1 lata que possui 5 litros
 print(f'A parede tem área total de {area}m² e serão necessários {tinta:.0f} litros de tinta para pintar a parede. Devem ser compradas {latas} latas de tinta.')
-#não entendi a questão das latas
-
 
 #Quebrando um número
 #Leia um número real e mostre sua parte inteira e a parte decima.
@@ -95,7 +93,6 @@ n = int(input('Digite um número: '))
 print(f'{cores['roxo']}ANALISANDO O NÚMERO {cores['amarelo']}{n}{cores['']}')
 time.sleep(2)
 print(f'A milhar é: {n // 1000 % 10}\nA centena é: {n // 100 % 10}\nA dezena é: {n // 10 % 10}\nA unidade é {n // 1 % 10 }')
-
 
 #Conversor de dinheiro de IOF
 r = float(input('Coloque o valor em reais: '))
